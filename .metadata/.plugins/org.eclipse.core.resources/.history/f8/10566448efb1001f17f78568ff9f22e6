@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(name = "lifeCycle.do", urlPatterns = { "/lifeCycle.do" })
+@WebServlet(name = "lifeCycle", urlPatterns = { "/lifeCycle" })
 public class LifeCycle extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
