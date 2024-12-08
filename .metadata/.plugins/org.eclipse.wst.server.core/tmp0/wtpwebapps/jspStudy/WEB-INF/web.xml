@@ -11,52 +11,40 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>visitList</display-name>
-    <servlet-name>visitList</servlet-name>
-    <servlet-class>co.kh.dev.bbs.VisitList</servlet-class>
+    <display-name>hello</display-name>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>co.kh.dev.Hello</servlet-class>
+    <init-param>
+      <description>전화번호</description>
+      <param-name>phone</param-name>
+      <param-value>010-1234-5678</param-value>
+    </init-param>
+    <init-param>
+      <description>아이디</description>
+      <param-name>id</param-name>
+      <param-value>id1234</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
-    <servlet-name>visitList</servlet-name>
-    <url-pattern>/visitList</url-pattern>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello.do</url-pattern>
   </servlet-mapping>
-  <servlet>
+<!--   <servlet>
     <description></description>
-    <display-name>visitInsert</display-name>
-    <servlet-name>visitInsert</servlet-name>
-    <servlet-class>co.kh.dev.bbs.VisitInsert</servlet-class>
+    <display-name>insertMemberServlet</display-name>
+    <servlet-name>insertMemberServlet</servlet-name>
+    <servlet-class>co.kh.dev.account.InsertMemberServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>visitInsert</servlet-name>
-    <url-pattern>/visitInsert</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>memberList</display-name>
-    <servlet-name>memberList</servlet-name>
-    <servlet-class>co.kh.dev.member.MemberList</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>memberList</servlet-name>
-    <url-pattern>/memberList</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>memberInsert</display-name>
-    <servlet-name>memberInsert</servlet-name>
-    <servlet-class>co.kh.dev.member.MemberInsert</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>memberInsert</servlet-name>
-    <url-pattern>/memberInsert</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>lifeCycle</display-name>
-    <servlet-name>lifeCycle</servlet-name>
-    <servlet-class>co.kh.dev.LifeCycle</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>lifeCycle</servlet-name>
-    <url-pattern>/lifeCycle</url-pattern>
-  </servlet-mapping>
+    <servlet-name>insertMemberServlet</servlet-name>
+    <url-pattern>/insertMemberServlet.do</url-pattern>
+  </servlet-mapping> -->
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/error/error404.jsp</location>
+  </error-page>
+   <error-page>
+  	<error-code>500</error-code>
+  	<location>/error/error500.jsp</location>
+  </error-page>
 </web-app>

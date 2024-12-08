@@ -1,6 +1,25 @@
-1733203886858	Delete element
-1733205105752	Rename package 'co.kh.dev.board'
-1733209777698	Delete element
-1733211637970	Delete element
-1733211661470	Delete element
-1733282066094	Delete element
+1733309256117	Delete element
+1733366840594	Rename resource 'hello.jsp'
+1733383307621	Move compilation unit
+1733383559303	Copy compilation unit
+1733384403352	Copy compilation unit
+1733387643579	Copy compilation unit
+1733393371614	Rename package 'co.kh.dev.account'
+1733393383021	Rename package 'co.kh.dev.account2'
+1733428487874	Rename compilation unit 'MyPageServlet.java'
+1733428557498	Copy compilation unit
+1733428564265	Copy compilation unit
+1733428578073	Delete element
+1733428582027	Delete element
+1733428598534	Copy compilation unit
+1733428603868	Copy compilation unit
+1733428609792	Delete element
+1733428632076	Copy compilation unit
+1733449756355	Rename package 'co.kh.dev.account'
+1733449799620	Copy compilation units
+1733454973900	Rename type 'MemberVO'
+1733455044328	Rename type 'MemberDAO'
+1733464871095	Delete element
+1733464932465	Delete element
+1733465009178	Move 'Register.html' to 'memberMyTest'
+1733471407091	Rename resource 'implict'
