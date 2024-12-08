@@ -14,7 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "visitList", urlPatterns = { "/visitList" })
+@WebServlet(name = "visitList", urlPatterns = { "/visitList.do" })
+//@WebServlet("/visitInsert.do")
 public class VisitList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

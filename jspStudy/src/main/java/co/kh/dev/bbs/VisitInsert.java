@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(name = "visitInsert", urlPatterns = { "/visitInsert" })
-//@WebServlet("/visitInsert")
+@WebServlet(name = "visitInsert", urlPatterns = { "/visitInsert.do" })
+//@WebServlet("/visitInsert.do")
 public class VisitInsert extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
