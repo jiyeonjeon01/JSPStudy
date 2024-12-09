@@ -9,6 +9,12 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+    <context-param>
+  	<param-name>name</param-name>
+  	<param-value>jiyeon</param-value>
+  </context-param>
+  
   <servlet>
     <description></description>
     <display-name>hello</display-name>
@@ -47,4 +53,5 @@
   	<error-code>500</error-code>
   	<location>/error/error500.jsp</location>
   </error-page>
+ 
 </web-app>
