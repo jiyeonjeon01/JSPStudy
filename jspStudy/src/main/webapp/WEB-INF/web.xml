@@ -1,57 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
-  <display-name>jspStudy</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-  </welcome-file-list>
-  
-    <context-param>
-  	<param-name>name</param-name>
-  	<param-value>jiyeon</param-value>
-  </context-param>
-  
-  <servlet>
-    <description></description>
-    <display-name>hello</display-name>
-    <servlet-name>hello</servlet-name>
-    <servlet-class>co.kh.dev.Hello</servlet-class>
-    <init-param>
-      <description>전화번호</description>
-      <param-name>phone</param-name>
-      <param-value>010-1234-5678</param-value>
-    </init-param>
-    <init-param>
-      <description>아이디</description>
-      <param-name>id</param-name>
-      <param-value>id1234</param-value>
-    </init-param>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>hello</servlet-name>
-    <url-pattern>/hello.do</url-pattern>
-  </servlet-mapping>
-<!--   <servlet>
-    <description></description>
-    <display-name>insertMemberServlet</display-name>
-    <servlet-name>insertMemberServlet</servlet-name>
-    <servlet-class>co.kh.dev.account.InsertMemberServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>insertMemberServlet</servlet-name>
-    <url-pattern>/insertMemberServlet.do</url-pattern>
-  </servlet-mapping> -->
-  <error-page>
-  	<error-code>404</error-code>
-  	<location>/error/error404.jsp</location>
-  </error-page>
-   <error-page>
-  	<error-code>500</error-code>
-  	<location>/error/error500.jsp</location>
-  </error-page>
- 
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>jspStudy</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+	<context-param>
+		<param-name>name</param-name>
+		<param-value>jiyeon</param-value>
+	</context-param>
+
+	<servlet>
+		<description></description>
+		<display-name>hello</display-name>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>co.kh.dev.Hello</servlet-class>
+		<init-param>
+			<description>전화번호</description>
+			<param-name>phone</param-name>
+			<param-value>010-1234-5678</param-value>
+		</init-param>
+		<init-param>
+			<description>아이디</description>
+			<param-name>id</param-name>
+			<param-value>id1234</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>/hello.do</url-pattern>
+	</servlet-mapping>
+	<!-- <servlet> <description></description> <display-name>insertMemberServlet</display-name> 
+		<servlet-name>insertMemberServlet</servlet-name> <servlet-class>co.kh.dev.account.InsertMemberServlet</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>insertMemberServlet</servlet-name> 
+		<url-pattern>/insertMemberServlet.do</url-pattern> </servlet-mapping> -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error/error404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error/error500.jsp</location>
+	</error-page>
+
+	<!-- connection Pool 10개 만들어줘! -->
+	<!--  context.xml과 연결되는 부분  -->
+	<resource-ref>
+		<description>ConnectionPool</description>
+		<res-ref-name>jdbc/myOracle</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+
 </web-app>
