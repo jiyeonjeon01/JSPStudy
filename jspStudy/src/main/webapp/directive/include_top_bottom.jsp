@@ -33,3 +33,4 @@ String name = "kim dong jin";
 <!-- 푸터영역  -->
 <%@ include file="bottom.jsp"%>
 
+

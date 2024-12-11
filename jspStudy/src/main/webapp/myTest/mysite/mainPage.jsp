@@ -4,8 +4,8 @@
 
 <%
 	request.setAttribute("PAGETITLE", "정보보기");
-	request.setAttribute("CONTENTPAGE", "info_view.jsp");
+	request.setAttribute("CONTENTPAGE", "content.jsp");
 
-	RequestDispatcher rd = request.getRequestDispatcher("/temp/template/template.jsp");
+	RequestDispatcher rd = request.getRequestDispatcher("/mysite/template/template.jsp");
 	rd.forward(request,response);
 %>	

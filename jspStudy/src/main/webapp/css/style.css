@@ -6,6 +6,12 @@ BODY {
 	LINE-HEIGHT: 160%;
 }
 
+MAIN {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 TD {
 	FONT-SIZE: 9pt;
 	COLOR: black;

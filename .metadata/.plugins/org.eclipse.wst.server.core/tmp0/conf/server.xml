@@ -164,7 +164,7 @@
 
       <Context docBase="C:\dev\eclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\dev\eclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\jspStudy" path="/jspStudy" reloadable="true" source="org.eclipse.jst.jee.server:jspStudy">
 	<Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="10" maxWaitMillis="-1" name="jdbc/myOracle" password="123456" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="webuser"/>
-</Context></Host>
+</Context><Context docBase="C:\dev\eclipseWorkspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\myTest" path="/myTest" reloadable="true" source="org.eclipse.jst.jee.server:myTest"/></Host>
     </Engine>
   </Service>
 </Server>

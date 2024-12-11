@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <%
-	request.setAttribute("PAGETITLE", "정보보기");
+	request.setAttribute("PAGETITLE", "지연이의 웹사이트");
 	request.setAttribute("CONTENTPAGE", "info_view.jsp");
 
 	RequestDispatcher rd = request.getRequestDispatcher("/temp/template/template.jsp");

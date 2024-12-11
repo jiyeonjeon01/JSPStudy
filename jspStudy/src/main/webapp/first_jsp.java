@@ -13,165 +13,164 @@ import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
 public final class first_jsp extends org.apache.jasper.runtime.HttpJspBase
-		implements org.apache.jasper.runtime.JspSourceDependent, org.apache.jasper.runtime.JspSourceImports {
+    implements org.apache.jasper.runtime.JspSourceDependent,
+                 org.apache.jasper.runtime.JspSourceImports {
 
-	// 멤버변수선언
-	String declation = "멤버변수선언문입니다. ";
+ 
+		//멤버변수선언
+		String declation = "멤버변수선언문입니다. ";
+	
+ 
+		//멤버함수선언
+		public String getDeclation(){
+			return declation; 
+	  }
+	
+  private static final javax.servlet.jsp.JspFactory _jspxFactory =
+          javax.servlet.jsp.JspFactory.getDefaultFactory();
 
-	// 멤버함수선언
-	public String getDeclation() {
-		return declation;
-	}
+  private static java.util.Map<java.lang.String,java.lang.Long> _jspx_dependants;
 
-	private static final javax.servlet.jsp.JspFactory _jspxFactory = javax.servlet.jsp.JspFactory.getDefaultFactory();
+  private static final java.util.Set<java.lang.String> _jspx_imports_packages;
 
-	private static java.util.Map<java.lang.String, java.lang.Long> _jspx_dependants;
+  private static final java.util.Set<java.lang.String> _jspx_imports_classes;
 
-	private static final java.util.Set<java.lang.String> _jspx_imports_packages;
+  static {
+    _jspx_imports_packages = new java.util.LinkedHashSet<>(4);
+    _jspx_imports_packages.add("javax.servlet");
+    _jspx_imports_packages.add("javax.servlet.http");
+    _jspx_imports_packages.add("javax.servlet.jsp");
+    _jspx_imports_classes = null;
+  }
 
-	private static final java.util.Set<java.lang.String> _jspx_imports_classes;
+  private volatile javax.el.ExpressionFactory _el_expressionfactory;
+  private volatile org.apache.tomcat.InstanceManager _jsp_instancemanager;
 
-	static {
-		_jspx_imports_packages = new java.util.LinkedHashSet<>(4);
-		_jspx_imports_packages.add("javax.servlet");
-		_jspx_imports_packages.add("javax.servlet.http");
-		_jspx_imports_packages.add("javax.servlet.jsp");
-		_jspx_imports_classes = null;
-	}
+  public java.util.Map<java.lang.String,java.lang.Long> getDependants() {
+    return _jspx_dependants;
+  }
 
-	private volatile javax.el.ExpressionFactory _el_expressionfactory;
-	private volatile org.apache.tomcat.InstanceManager _jsp_instancemanager;
+  public java.util.Set<java.lang.String> getPackageImports() {
+    return _jspx_imports_packages;
+  }
 
-	public java.util.Map<java.lang.String, java.lang.Long> getDependants() {
-		return _jspx_dependants;
-	}
+  public java.util.Set<java.lang.String> getClassImports() {
+    return _jspx_imports_classes;
+  }
 
-	public java.util.Set<java.lang.String> getPackageImports() {
-		return _jspx_imports_packages;
-	}
+  public javax.el.ExpressionFactory _jsp_getExpressionFactory() {
+    if (_el_expressionfactory == null) {
+      synchronized (this) {
+        if (_el_expressionfactory == null) {
+          _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
+        }
+      }
+    }
+    return _el_expressionfactory;
+  }
 
-	public java.util.Set<java.lang.String> getClassImports() {
-		return _jspx_imports_classes;
-	}
+  public org.apache.tomcat.InstanceManager _jsp_getInstanceManager() {
+    if (_jsp_instancemanager == null) {
+      synchronized (this) {
+        if (_jsp_instancemanager == null) {
+          _jsp_instancemanager = org.apache.jasper.runtime.InstanceManagerFactory.getInstanceManager(getServletConfig());
+        }
+      }
+    }
+    return _jsp_instancemanager;
+  }
 
-	public javax.el.ExpressionFactory _jsp_getExpressionFactory() {
-		if (_el_expressionfactory == null) {
-			synchronized (this) {
-				if (_el_expressionfactory == null) {
-					_el_expressionfactory = _jspxFactory
-							.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
-				}
-			}
-		}
-		return _el_expressionfactory;
-	}
+  public void _jspInit() {
+  }
 
-	public org.apache.tomcat.InstanceManager _jsp_getInstanceManager() {
-		if (_jsp_instancemanager == null) {
-			synchronized (this) {
-				if (_jsp_instancemanager == null) {
-					_jsp_instancemanager = org.apache.jasper.runtime.InstanceManagerFactory
-							.getInstanceManager(getServletConfig());
-				}
-			}
-		}
-		return _jsp_instancemanager;
-	}
+  public void _jspDestroy() {
+  }
 
-	public void _jspInit() {
-	}
+  public void _jspService(final javax.servlet.http.HttpServletRequest request, final javax.servlet.http.HttpServletResponse response)
+      throws java.io.IOException, javax.servlet.ServletException {
 
-	public void _jspDestroy() {
-	}
+    if (!javax.servlet.DispatcherType.ERROR.equals(request.getDispatcherType())) {
+      final java.lang.String _jspx_method = request.getMethod();
+      if ("OPTIONS".equals(_jspx_method)) {
+        response.setHeader("Allow","GET, HEAD, POST, OPTIONS");
+        return;
+      }
+      if (!"GET".equals(_jspx_method) && !"POST".equals(_jspx_method) && !"HEAD".equals(_jspx_method)) {
+        response.setHeader("Allow","GET, HEAD, POST, OPTIONS");
+        response.sendError(HttpServletResponse.SC_METHOD_NOT_ALLOWED, "JSP들은 오직 GET, POST 또는 HEAD 메소드만을 허용합니다. Jasper는 OPTIONS 메소드 또한 허용합니다.");
+        return;
+      }
+    }
 
-	public void _jspService(final javax.servlet.http.HttpServletRequest request,
-			final javax.servlet.http.HttpServletResponse response)
-			throws java.io.IOException, javax.servlet.ServletException {
+    final javax.servlet.jsp.PageContext pageContext;
+    javax.servlet.http.HttpSession session = null;
+    final javax.servlet.ServletContext application;
+    final javax.servlet.ServletConfig config;
+    javax.servlet.jsp.JspWriter out = null;
+    final java.lang.Object page = this;
+    javax.servlet.jsp.JspWriter _jspx_out = null;
+    javax.servlet.jsp.PageContext _jspx_page_context = null;
 
-		if (!javax.servlet.DispatcherType.ERROR.equals(request.getDispatcherType())) {
-			final java.lang.String _jspx_method = request.getMethod();
-			if ("OPTIONS".equals(_jspx_method)) {
-				response.setHeader("Allow", "GET, HEAD, POST, OPTIONS");
-				return;
-			}
-			if (!"GET".equals(_jspx_method) && !"POST".equals(_jspx_method) && !"HEAD".equals(_jspx_method)) {
-				response.setHeader("Allow", "GET, HEAD, POST, OPTIONS");
-				response.sendError(HttpServletResponse.SC_METHOD_NOT_ALLOWED,
-						"JSP들은 오직 GET, POST 또는 HEAD 메소드만을 허용합니다. Jasper는 OPTIONS 메소드 또한 허용합니다.");
-				return;
-			}
-		}
 
-		final javax.servlet.jsp.PageContext pageContext;
-		javax.servlet.http.HttpSession session = null;
-		final javax.servlet.ServletContext application;
-		final javax.servlet.ServletConfig config;
-		javax.servlet.jsp.JspWriter out = null;
-		final java.lang.Object page = this;
-		javax.servlet.jsp.JspWriter _jspx_out = null;
-		javax.servlet.jsp.PageContext _jspx_page_context = null;
+    try {
+      response.setContentType("text/html; charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
 
-		try {
-			response.setContentType("text/html; charset=UTF-8");
-			pageContext = _jspxFactory.getPageContext(this, request, response, null, true, 8192, true);
-			_jspx_page_context = pageContext;
-			application = pageContext.getServletContext();
-			config = pageContext.getServletConfig();
-			session = pageContext.getSession();
-			out = pageContext.getOut();
-			_jspx_out = out;
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("<head>\r\n");
+      out.write("<meta charset=\"UTF-8\">\r\n");
+      out.write("<title>Insert title here</title>\r\n");
+      out.write("</head>\r\n");
+      out.write("<body>\r\n");
+      out.write("	<h1> 여기서 아래에 있는 멤버변수를 쓸것이다. ");
+      out.print( declation);
+      out.write(" </h1>\r\n");
+      out.write("	<h1> 여기서 아래에 있는 멤버함수 콜할수 있다. ");
+      out.print( getDeclation());
+      out.write(" </h1>\r\n");
+      out.write("	<h1>연산처리</h1>\r\n");
+      out.write("	");
 
-			out.write("\r\n");
-			out.write("<!DOCTYPE html>\r\n");
-			out.write("<html>\r\n");
-			out.write("<head>\r\n");
-			out.write("<meta charset=\"UTF-8\">\r\n");
-			out.write("<title>Insert title here</title>\r\n");
-			out.write("</head>\r\n");
-			out.write("<body>\r\n");
-			out.write("	<h1> 여기서 아래에 있는 멤버변수를 쓸것이다. ");
-			out.print(declation);
-			out.write(" </h1>\r\n");
-			out.write("	<h1> 여기서 아래에 있는 멤버함수 콜할수 있다. ");
-			out.print(getDeclation());
-			out.write(" </h1>\r\n");
-			out.write("	<h1>연산처리</h1>\r\n");
-			out.write("	");
-
-			// 연산처리
-			// 내장객체: ontext, config, request, response, pageContext, session, out, page
-			// 자바연산처리(제어문, 반목문): 서비스에서 진행이된다.
-			String message = "연산처리문입니다. "; // message : (서비스에 있는 지역변수입니다)
-			out.println("내장객체를 이용한 출력" + message);
-
-			out.write("\r\n");
-			out.write("	<h1>멤버변수선언</h1>\r\n");
-			out.write("	");
-			out.write("\r\n");
-			out.write("	<h1>멤버함수선언</h1>\r\n");
-			out.write("	");
-			out.write("\r\n");
-			out.write("</body>\r\n");
-			out.write("</html>");
-		} catch (java.lang.Throwable t) {
-			if (!(t instanceof javax.servlet.jsp.SkipPageException)) {
-				out = _jspx_out;
-				if (out != null && out.getBufferSize() != 0)
-					try {
-						if (response.isCommitted()) {
-							out.flush();
-						} else {
-							out.clearBuffer();
-						}
-					} catch (java.io.IOException e) {
-					}
-				if (_jspx_page_context != null)
-					_jspx_page_context.handlePageException(t);
-				else
-					throw new ServletException(t);
-			}
-		} finally {
-			_jspxFactory.releasePageContext(_jspx_page_context);
-		}
-	}
+		//연산처리
+		//내장객체: ontext, config, request, response, pageContext, session, out, page
+		//자바연산처리(제어문, 반목문): 서비스에서 진행이된다.
+		String message = "연산처리문입니다. ";  //message : (서비스에 있는 지역변수입니다)
+		out.println("내장객체를 이용한 출력"+message); 
+	
+      out.write("\r\n");
+      out.write("	<h1>멤버변수선언</h1>\r\n");
+      out.write("	");
+      out.write("\r\n");
+      out.write("	<h1>멤버함수선언</h1>\r\n");
+      out.write("	");
+      out.write("\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>");
+    } catch (java.lang.Throwable t) {
+      if (!(t instanceof javax.servlet.jsp.SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          try {
+            if (response.isCommitted()) {
+              out.flush();
+            } else {
+              out.clearBuffer();
+            }
+          } catch (java.io.IOException e) {}
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
 }

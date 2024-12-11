@@ -31,3 +31,4 @@ System.out.println("name="+nameParam[1]);
 %>
 <!-- 2.curd  -->
 <!-- 3.화면설계(자바코드에 해야되는데 - > jsp service함수에서 진행한다. -->
+

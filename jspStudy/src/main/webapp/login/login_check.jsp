@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page import="co.kh.dev.login.model.LoginDAO"%>
 <%@ page import="co.kh.dev.login.model.LoginVO"%>
 <!-- 1.사용자정보를 가져온다  -->
@@ -9,7 +9,7 @@ String pass = request.getParameter("pass");
 %>
 <!-- 2.curd  -->
 <!-- 3.화면설계(자바코드에 해야되는데 - > jsp service함수에서 진행한다. -->
-<%
+<% 
 boolean successFlag = false;
 //아이디와 패스워드 확인
 if (id != null && pass != null) {
@@ -34,13 +34,13 @@ if (id != null && pass != null) {
 	window.location.href = 'login_main.jsp';
 </script>
 <%
-} // 3. 로그인 성공 시 세션을 생성하여 사용자 정보 저장 end
-} else {
+	} // 3. 로그인 성공 시 세션을 생성하여 사용자 정보 저장 end
+}else{
 %>
-<script>
-	alert('아이디와 패스워드 입력에러입니다.');
-	window.location.href = 'login_main.jsp';
-</script>
-<%
+	<script>
+		alert('아이디와 패스워드 입력에러입니다.');
+		window.location.href = 'login_main.jsp';
+ </script>
+<%	
 } //아이디와 패스워드 end
 %>

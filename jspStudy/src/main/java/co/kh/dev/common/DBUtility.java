@@ -17,7 +17,7 @@ public class DBUtility {
 
 	    try {
 	        // Load DB properties
-	        properties.load(new FileReader("C:\\dev\\eclipseWorkspace\\jspStudy\\src\\main\\java\\co\\kh\\dev\\backup\\db.properties"));
+	        properties.load(new FileReader("C:\\dev\\eclipseWorkspace\\jspStudy\\src\\main\\java\\co\\kh\\dev\\common\\db.properties"));
 	        String url = properties.getProperty("url");
 	        String id = properties.getProperty("id");
 	        String pw = properties.getProperty("pw");

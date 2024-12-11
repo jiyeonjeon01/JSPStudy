@@ -8,6 +8,6 @@
 </head>
 <body>
 	<h1>jsp study 열심히 공부하자</h1>
-	<%= new java.util.Date()%>
+	<%= new java.util.Date() %>
 </body>
 </html>
