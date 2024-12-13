@@ -65,6 +65,8 @@ C:\dev\eclipseWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\31
 \jspStudy\src\main\java
 C:\dev\eclipseWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2536988416.index
 \jspStudy\src\main\java
+C:\dev\eclipseWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3685845896.index
+\mySite\src\main\java
 C:\dev\eclipseWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2444155865.index
 \jspStudy\src\main\java
 C:\dev\eclipseWorkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1501703906.index

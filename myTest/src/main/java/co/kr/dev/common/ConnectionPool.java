@@ -54,7 +54,7 @@ public final class ConnectionPool {
 		used = new ArrayList<Connection>(initialCons);
 
 		// 2. db.properties 파일 에서 id, pw 가져오기
-		String filePath = "C:\\dev\\eclipseWorkspace\\jspStudy\\src\\main\\java\\co\\kh\\dev\\common\\db.properties";
+		String filePath = "C:\\dev\\eclipseWorkspace\\myTest\\src\\main\\java\\co\\kr\\dev\\common\\db.properties";
 		Properties pt = new Properties();
 		try {
 			pt.load(new FileReader(filePath));

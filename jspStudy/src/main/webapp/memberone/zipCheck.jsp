@@ -1,6 +1,6 @@
-<%@page import="co.kh.dev.memberone.model.ZipCodeVO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="co.kh.dev.memberone.model.StudentDAO"%>
+<%@page import="co.kh.dev.memberone.model.ZipCodeVO"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <!-- 1.사용자정보를 가져온다  -->
 <!-- 2.curd  -->
