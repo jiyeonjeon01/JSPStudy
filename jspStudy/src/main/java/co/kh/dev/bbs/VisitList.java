@@ -14,8 +14,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "visitList", urlPatterns = { "/visitList.do" })
-//@WebServlet("/visitInsert.do")
+/**
+ * Servlet implementation class VisitList
+ */
+//@WebServlet(name = "visitList", urlPatterns = { "/visitList" })
 public class VisitList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -50,12 +52,12 @@ public class VisitList extends HttpServlet {
 			out.println("<html>");
 			out.println("<head><title>방명록 리스트</title></head>");
 			out.println("<body>");
+			out.println("<table align=center width=500 border=1>");
 			while (rs.next()) {
 				int no = rs.getInt("no");
 				String writer = rs.getString("writer");
 				String memo = rs.getString("memo");
 				java.sql.Date regdate = rs.getDate("regdate");
-				out.println("<table align=center width=500 border=1>");
 				out.println("<tr>");
 				out.println("<th width=50>번호</th>");
 				out.println("<td width=50 align=center>" + no + "</td>");
@@ -68,9 +70,9 @@ public class VisitList extends HttpServlet {
 				out.println("<th width=50>내용</th>");
 				out.println("<td colspan=5>&nbsp;<textarea rows=3 cols=50>" + memo + "</textarea></td>");
 				out.println("</tr>");
-				out.println("</table>");
-				out.println("<p>");
 			}
+			out.println("</table>");
+			out.println("<p>");
 			out.println("<p align=center><a href=/jspStudy/bbs/write.html>글쓰기</a></p>");
 			out.println("</body>");
 			out.println("</html>");
@@ -103,4 +105,5 @@ public class VisitList extends HttpServlet {
 		}
 
 	}
+
 }

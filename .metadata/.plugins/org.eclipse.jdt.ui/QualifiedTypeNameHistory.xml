@@ -4,4 +4,5 @@
     <fullyQualifiedTypeName name="java.io.UnsupportedEncodingException"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="co.kh.dev.common.ConnectionPool"/>
+    <fullyQualifiedTypeName name="co.kh.dev.memberone.model.StudentVO"/>
 </qualifiedTypeNameHistroy>

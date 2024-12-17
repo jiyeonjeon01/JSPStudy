@@ -1,26 +1,15 @@
 package co.kh.dev.tempmember.model;
 
 public class TempMemberVO {
-//    ID VARCHAR2(20), 
-//    PASSWD VARCHAR2(20), 
-//    NAME VARCHAR2(20), 
-//    MEM_NUM1 VARCHAR2(6), 
-//    MEM_NUM2 VARCHAR2(7), 
-//    E_MAIL VARCHAR2(30), 
-//    PHONE VARCHAR2(30), 
-//    ZIPCODE VARCHAR2(7), 
-//    ADDRESS VARCHAR2(60), 
-//    JOB VARCHAR2(30)
-	
-	private String id;
-	private String passwd;
-	private String name;
-	private String memNum1;
-	private String memNum2;
-	private String eMail;
-	private String phone;
-	private String zipcode;
-	private String address;
+	private String id;   
+	private String passwd;  
+	private String name; 
+	private String memNum1;  
+	private String memNum2;  
+	private String eMail;  
+	private String phone; 
+	private String zipcode;  
+	private String address;  
 	private String job;
 	public TempMemberVO() {
 		super();
@@ -105,8 +94,5 @@ public class TempMemberVO {
 		return "TempMemberVO [id=" + id + ", passwd=" + passwd + ", name=" + name + ", memNum1=" + memNum1
 				+ ", memNum2=" + memNum2 + ", eMail=" + eMail + ", phone=" + phone + ", zipcode=" + zipcode
 				+ ", address=" + address + ", job=" + job + "]";
-	}
-	
-	
-	
+	} 
 }

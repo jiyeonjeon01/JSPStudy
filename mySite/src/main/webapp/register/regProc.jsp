@@ -1,14 +1,14 @@
 
-<%@page import="co.kr.dev.register.model.StudentDAO"%>
+<%@page import="co.kr.dev.student.model.StudentDAO"%>
 <%@page import="java.rmi.StubNotFoundException"%>
 <%@ page contentType="text/html; charset=UTF-8" %>
 <!-- 1.사용자정보를 가져온다  -->
 <!-- 2.curd  -->
-<% 
- request.setCharacterEncoding("utf-8");
- StudentDAO sdao = new StudentDAO(); 
+<%
+request.setCharacterEncoding("utf-8");
+ StudentDAO sdao = new StudentDAO();
 %>
-<jsp:useBean id="svo" class="co.kr.dev.register.model.StudentVO" />
+<jsp:useBean id="svo" class="co.kr.dev.login.model.StudentVO" />
 <jsp:setProperty name="svo" property="*" />
 <% 
 	boolean flag = sdao.insertDB(svo);

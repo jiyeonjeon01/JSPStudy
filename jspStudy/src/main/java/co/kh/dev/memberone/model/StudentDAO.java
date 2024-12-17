@@ -122,6 +122,8 @@ public class StudentDAO {
 			if (rs.next()) {
 				pass = rs.getString("PASS");
 				check = (pass.equals(svo.getPass()) == true)?(1):(0); 
+			}else {
+				check = -1; 
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

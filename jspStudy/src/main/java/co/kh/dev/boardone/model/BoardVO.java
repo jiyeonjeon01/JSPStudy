@@ -107,6 +107,12 @@ public class BoardVO {
 	public void setIp(String ip) {
 		this.ip = ip;
 	}
+	@Override
+	public String toString() {
+		return "BoardVO [num=" + num + ", writer=" + writer + ", email=" + email + ", subject=" + subject + ", pass="
+				+ pass + ", readcount=" + readcount + ", ref=" + ref + ", step=" + step + ", depth=" + depth
+				+ ", regdate=" + regdate + ", content=" + content + ", ip=" + ip + "]";
+	}
 	
 	
 }

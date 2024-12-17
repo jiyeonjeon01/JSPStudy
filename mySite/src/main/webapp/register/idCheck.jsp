@@ -1,6 +1,6 @@
 
-<%@page import="co.kr.dev.register.model.StudentDAO"%>
-<%@page import="co.kr.dev.register.model.StudentVO"%>
+<%@page import="co.kr.dev.student.model.StudentDAO"%>
+<%@page import="co.kr.dev.student.model.StudentVO"%>
 <%@page contentType="text/html; charset=UTF-8"%>
 <!-- 1.사용자정보를 가져온다  -->
 <!-- 2.curd  -->

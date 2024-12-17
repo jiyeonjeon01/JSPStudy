@@ -25,14 +25,11 @@ public class TempMemberDAO {
 	public ArrayList<TempMemberVO> selectDB() {
 		ConnectionPool cp = ConnectionPool.getInstance(); 
 		Connection con = cp.dbCon();
-//		Connection con = null; 
-//		try {
-//			Context contect = new InitialContext(); 
-//			DataSource ds = (DataSource)contect.lookup("java:comp/env/jdbc/myOracle");
-//			con = ds.getConnection();
-//		} catch (Exception e) {
-//			e.printStackTrace(); 
-//		}
+		/*
+		 * Connection con = null; try { Context contect = new InitialContext();
+		 * DataSource ds = (DataSource)contect.lookup("java:comp/env/jdbc/myOracle");
+		 * con = ds.getConnection(); } catch (Exception e) { e.printStackTrace(); }
+		 */
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		ArrayList<TempMemberVO> tmList = new ArrayList<TempMemberVO>();

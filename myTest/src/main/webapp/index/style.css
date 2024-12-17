@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+/* 전체 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* 세로로 배치 */
+    min-height: 100vh; /* 화면 전체 높이를 기준 */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+/* 헤더 ----------------------------------------------------------------------------------------------------------------------------------*/
+header {
+    margin: 0 auto; /* 이게 잇어야 정가운데 옴 */
+    margin-top: 2%;
+    width: 80%;   
+    height: 70px;
+    
+}
+table { 
+   /*  border: 1px solid black; */
+    width: 100%;
+    height: 70px;
+    background-color: aliceblue;
+    
+}
+td {
+	/* border: 1px solid black; */
+}
+.logoTd {
+    margin: 0 auto;
+    /* display: flex; */
+    text-align: center;
+    width: 10%;
+    
+}
+
+.menuTd  {
+    margin: 0 auto;
+    display: flex; /* 메뉴 안에 내용들을 가로로 정렬하기 위해 */
+    text-align: center; /* line-height 과 같이 쓰여야 잘 적용됨 */
+    line-height: 70px; /* line-height 높이는 맞추고자하는 테이블의 높이 */
+    width: 100%;
+}
+
+.notiMenu, .normalMenu, .contentMenu, .qnaMenu{
+    margin: 0 auto;
+    width: 25%;
+    height: 70px;
+    text-align: center;
+}
+
+.loginBtnTd {
+    margin: 0 auto;
+    text-align: center;
+    width: 10%;
+
+}
+.emptyTd {
+    margin: 0 auto;
+    width: 10%;
+}
+
+
+.userTd {
+	width: 10%;
+    text-align: center; /* 텍스트를 가운데 정렬 */
+    vertical-align: middle; /* 테이블 셀 내 수직 정렬 */
+    font-size: 1em; /* 글자 크기 */
+    color: #333; /* 글자 색상 */
+}
+
+.userTd span {
+    font-weight: bold; /* 사용자 이름을 강조 */
+}
+
+/* 로그인 버튼 스타일 */
+.loginBtnTd {
+	width: 10%;
+    text-align: center; /* 버튼을 가운데 정렬 */
+    vertical-align: middle; /* 수직 중앙 정렬 */
+}
+
+.loginBtn {
+    padding: 8px 15px;
+    background-color: #dadada;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginBtn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* 메인 전체체 ----------------------------------------------------------------------------------------------------------------------------------*/
+main {
+    margin: 0 auto; /* 이게 잇어야 정가운데 옴 */
+    margin-top: 3%;
+    width: 80%;
+    /* border: 1px solid black; */
+     height: auto;
+    /* flex: 1; 메인이 남은 공간을 차지 */
+}
+
+
+/* 슬라이드쇼 스타일 */
+.slideShow {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    background-color: #776363;
+} 
+
+.slideShow .slidePic {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slideShow .slidePic a {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideShow .slidePic img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.slideShow .slideSideIcon a {
+    position: absolute;
+    top: 50%;
+    color: rgba(222, 222, 222, 0.796);
+    font-size: 42px;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+.slideShow .prev {
+    left: 10px;
+}
+
+.slideShow .next {
+    right: 10px;
+}
+
+.slideShow .slideFooterIcon {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.slideShow .slideFooterIcon a {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.633);
+    padding: 7px;
+    font-size: 24px;
+}
+
+.slideShow .slideFooterIcon a.active {
+    color: rgb(222, 165, 165);
+}
+
+
+
+
+/* 회전목마 제외한 메인의 메인 */
+section {
+    display: flex; /* 가로 배치 */
+    margin: 0 auto;
+    margin-top: 3%; /* 슬라이드쇼와의 여백 */
+    margin-bottom: 3%;
+    width: 100%;
+    height: 600px; /* 높이 내용에 맞춤 */
+    /* border: 1px solid black; */
+    background-color: #f9f9f9;
+}
+
+/* 왼쪽 사이드바 스타일 */
+aside {
+    flex: 2; /* 2:8 비율에서 2 */
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column; /* 세로 배치 */
+    justify-content: flex-start; /* 상단 정렬 */
+    align-items: center; /* 가로축 중앙 정렬 */
+    height: 600px; /* 높이 설정 */
+    padding-top: 10%; /* 1:4 비율 정도로 위에 배치 */
+}
+
+.aside {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.aside button {
+    margin-top: 20px; /* 버튼과 텍스트 사이 여백 */
+    padding: 8px 15px;
+    background-color: #dadada;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.aside button:hover {
+    background-color: #0056b3;
+}
+
+
+
+article {
+/* 	display: block; */
+    flex: 8; /* 2:8 비율에서 8 */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: auto;
+    margin-left: 10px; /* aside와의 간격 */
+}
+
+.boardTable th, .boardTable td {
+    border: none; /* 모든 셀의 테두리 제거 */
+    padding: 10px;
+    text-align: center;
+    word-break: break-word;
+}
+
+/* article 내부 div 요소 3줄 배치 */
+article > div {
+    margin-bottom: 20px; /* 각 div 사이 여백 */
+}
+
+article > .boardTitle {
+    text-align: center; /* 가운데 정렬 */
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+article > .boardHref {
+    text-align: right; /* 오른쪽 정렬 */
+    margin-top: 10px;
+}
+
+/* 게시판 테이블 스타일 */
+.boardTable {
+    width: 100%; /* 부모 요소에 맞게 너비 확장 */
+   /*  height: 100%; */
+    border-collapse: collapse; /* 테두리 합치기 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+
+
+/* thead 아래에만 경계선 추가 */
+.boardTable thead {
+    background-color: #f4f4f4; /* 헤더 배경색 */
+    font-weight: bold;
+    border-bottom: 1px solid black; /* thead와 tbody 사이 경계선 */
+}
+
+
+
+.boardTable tbody {
+    display: table-row-group;
+}
+
+/* 셀의 간격을 자연스럽게 하기 */
+.boardTable tbody tr {
+    border-bottom: 1px solid #ddd; /* 각 행에 약한 경계선 추가 (선택사항) */
+}
+
+.boardTable tbody tr:last-child {
+    border-bottom: none; /* 마지막 행의 테두리 제거 */
+}
+
+/* boardHref를 오른쪽 배치 */
+.boardHref {
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* 푸터 ----------------------------------------------------------------------------------------------------------------------------------*/
+footer {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3%;
+    /* border: 1px solid black; */
+    height: 100px;
+    text-align: center;
+    background-color: #f4f4f4;
+    line-height: 100px; /* 텍스트 수직 정렬 */
+}
